@@ -18,6 +18,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - run: mvn package
+
       - name: Build and Test with Maven
         run: mvn clean package
 
